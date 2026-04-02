@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السنن المهجورة</title>
+    <meta name="theme-color" content="#0d1a38" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="السنن المهجورة" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">السنن المهجورة</a>
+        <nav class="nav-links">
+          <a class="nav-link active" href="#home" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z"/></svg>
+            </span>
+            <span class="nav-text">الرئيسية</span>
+          </a>
+          <a class="nav-link" href="#sections">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 4h12v4H6zM6 10h5v10H6zM13 10h5v4h-5zM13 16h5v4h-5z"/></svg>
+            </span>
+            <span class="nav-text">الأقسام</span>
+          </a>
+          <a class="nav-link" href="#featured">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m12 3 2.3 4.7 5.2.8-3.7 3.6.9 5.1L12 14.8 7.3 17.2l.9-5.1-3.7-3.6 5.2-.8z"/></svg>
+            </span>
+            <span class="nav-text">مختارات</span>
+          </a>
+          <a class="nav-link" href="#all-cards">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10.5 4a6.5 6.5 0 1 0 3.96 11.66l4.44 4.44 1.41-1.41-4.44-4.44A6.5 6.5 0 0 0 10.5 4m0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9"/></svg>
+            </span>
+            <span class="nav-text">الكل</span>
+          </a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="تبديل وضع الألوان">
+          <span class="theme-toggle-text">الوضع الفاتح</span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <span class="hero-badge">واجهة أرشيفية مبسطة</span>
+            <h1>منصة لعرض السنن المهجورة بشكل واضح ومنظم</h1>
+            <p>
+              تصفح الأقسام، استعرض الكروت، وافتح صفحة كل سنة لتجد مختصرًا في
+              البداية ثم النص الكامل والسند. جميع النصوص هنا نصوص مثال فقط.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#all-cards">ابدأ التصفح</a>
+              <a class="button ghost" href="#sections">استعرض الأقسام</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-card">
+                <strong>24</strong>
+                <span>سنة معروضة</span>
+              </div>
+              <div class="stat-card">
+                <strong>6</strong>
+                <span>أقسام رئيسية</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="panel-grid">
+              <article class="mini-panel">
+                <span>القسم الأبرز</span>
+                <strong>سنن اليوم والليلة</strong>
+                <p>بطاقات مختصرة مع انتقال مباشر للتفاصيل.</p>
+              </article>
+              <article class="mini-panel">
+                <span>عرض مبسط</span>
+                <strong>مختصر + نص كامل</strong>
+                <p>هيكل واضح يساعد على القراءة والتصفح.</p>
+              </article>
+              <article class="mini-panel accent">
+                <span>ملاحظة</span>
+                <strong>المحتوى الحالي تجريبي</strong>
+                <p>تم استخدام نص مثال بدل الأحاديث الفعلية.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block" id="sections">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">الأقسام</span>
+              <h2>أقسام منظمة للوصول السريع</h2>
+            </div>
+            <p>كل قسم يقود إلى مجموعة من السنن المهجورة بنمط بصري موحد.</p>
+          </div>
+
+          <div class="category-grid" id="category-grid"></div>
+        </section>
+
+        <section class="section-block featured-strip" id="featured">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">مختارات</span>
+              <h2>بطاقات بارزة</h2>
+            </div>
+            <p>بعض الكروت تتضمن صورة تعبيرية وبعضها يعتمد على النص فقط.</p>
+          </div>
+          <div class="featured-grid" id="featured-grid"></div>
+        </section>
+
+        <section class="section-block" id="all-cards">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">المكتبة</span>
+              <h2>جميع السنن المهجورة</h2>
+            </div>
+            <p>يمكنك التصفية حسب القسم أو استعراض جميع العناصر دفعة واحدة.</p>
+          </div>
+
+          <div class="filters" id="filters"></div>
+          <div class="cards-grid" id="cards-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="theme.js"></script>
+    <script src="pwa.js"></script>
+  </body>
+</html>
